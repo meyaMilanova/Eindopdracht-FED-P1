@@ -1,0 +1,1020 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+
+/* Animations */
+@keyframes logoAnimation {
+    0% {
+        transform: rotate(0);
+    }
+
+    15% {
+        transform: rotate(10deg);
+    }
+
+    40% {
+        transform: rotate(0);
+    }
+
+    65% {
+        transform: rotate(-10deg);
+    }
+
+    90% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes navAnimation {
+    0% {
+        transform: translateY(-25vh);
+        color: transparent;
+
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes goUpAnimation {
+    0% {
+        transform: translateY(15vh);
+        color: transparent;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes headerPointAnimation {
+    0% {
+        transform: translateX(15vh);
+        color: transparent;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes sonnyJumping {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(-3vh);
+    }
+
+    70% {
+        transform: translateY(0vh);
+    }
+
+    80% {
+        transform: translateY(-2vh);
+    }
+
+    90% {
+        transform: translateY(0vh);
+    }
+
+    95% {
+        transform: translateY(-1vh);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+
+    /* 100, 95,90, 80, 70, 60, 50 */
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* Hele body coden */
+html {
+    font-size: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f2ede9;
+}
+
+.line {
+    border-bottom: 2px solid #d9ccc1;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-image: url(../images/Eternity\ Pond\ by\ David\ Dessens.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 45px #c4b6ab;
+    margin-bottom: 7vh;
+}
+
+/* Nav */
+nav {
+    display: flex;
+    background-color: #d9ccc1;
+    border-radius: 0 0 50% 50%;
+    align-items: center;
+    gap: 5vw;
+    padding: 1vh 0;
+    padding-left: 7vw;
+    box-shadow: 0 0 55px #484848;
+    height: 11vh;
+    animation: navAnimation 1s ease-out;
+}
+
+nav img {
+    position: fixed;
+    top: 1vw;
+    left: 1vw;
+    width: 4vw;
+    animation: logoAnimation 5s linear 1s infinite;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: black;
+    padding: 0 10px 7px 20px;
+    margin-bottom: 1px;
+    text-shadow: 1px 1px 3px #9c9793;
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #2c2b2a;
+    border-radius: 0 0 20px 0;
+    box-shadow: 3px 3px 3px #484848;
+    transform: translateY(-5px);
+}
+
+nav a:active {
+    color: #8f7e6f;
+    box-shadow: 2px 2px 2px #5a5959;
+}
+
+/* Eind nav */
+
+.web-name {
+    text-align: center;
+    color: #ffffff;
+    font-size: 5rem;
+    margin: 0;
+    margin-top: 7vh;
+    text-shadow: 1px 1px 3px #2c2b2a;
+    animation: goUpAnimation 1s ease-out;
+}
+
+.moto {
+    text-align: center;
+    color: #ffffff;
+    font-size: 10.5rem;
+    margin: 10vh 0 18vh 0;
+    text-shadow: 3px 3px 7px #272625;
+    animation: goUpAnimation 1s ease-out;
+}
+
+.moto span {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
+
+.pointing {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px #2c2b2a;
+    rotate: 90deg;
+    animation: headerPointAnimation 1s ease-out;
+    padding-right: 9vh;
+    font-size: 6rem;
+}
+
+/* Eind header */
+
+/* Main */
+/* First section */
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vw;
+    padding: 0 5vw;
+    margin: 7vh 0;
+}
+
+.poem-itself {
+    border-left: 4px ridge #d9ccc1;
+    border-bottom: 4px ridge #d9ccc1;
+    padding: 2vh 2vw;
+    border-bottom-left-radius: 30px;
+    background-color: #e2d9d1;
+    box-shadow: 3px -3px 10px #e2d9d1;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin: 0;
+    margin-bottom: 1hv;
+    font-family: 'Bitter', serif;
+}
+
+.poem-itself p {
+    font-family: 'Bitter', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 1.5vh;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    width: 16vw;
+}
+
+.images img {
+    height: 28vh;
+    object-fit: cover;
+    box-shadow: 1px 1px 15px #8f8a86;
+    border-left: 2px solid #5a5959;
+}
+
+.top-photo {
+    border-radius: 30px 30px 0 0;
+}
+
+.bottom-photo {
+    border-radius: 0 0 30px 30px;
+}
+
+.poem-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.poem-info p {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.poem-info span {
+    font-weight: 300;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.poem-form {
+    display: grid;
+    grid-template-rows: 3, auto;
+    gap: 4vh;
+}
+
+.poem-info-score h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.poem-info-score label {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.poem-info-comment label {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+.poem-info-comment textarea {
+    border: 1px solid #d9ccc1;
+    font-size: 1.6rem;
+    margin-top: 1vh;
+}
+
+.poem-form button {
+    background-color: #d9ccc1;
+    justify-self: end;
+    align-self: center;
+    padding: 1vh 3vw;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 3px #484848;
+}
+
+.poem-form button:hover {
+    border-bottom: 1px solid #2c2b2a;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #484848;
+    transform: translateY(-3px);
+}
+
+.poem-form button:active {
+    color: #e2d9d1;
+    background-color: #57493d;
+}
+
+
+/* Eind first section */
+
+/* Second section */
+.second-section {
+    display: grid;
+    grid-template-columns: 47vw 28vw 20vw;
+    grid-template-rows: 1, auto;
+    column-gap: 2vw;
+    align-items: center;
+    background-image: url(../images/Screenshot\ 2023-10-02\ 135828.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 7vh 0;
+    box-shadow: 1px 1px 15px #8f8a86;
+}
+
+.author-info {
+    grid-area: 1 / 1 / 1 / 1;
+    background-color: #57493d;
+    padding: 0 13vw 0 16vw;
+    border-radius: 0 80px 80px 0;
+    box-shadow: 1px 1px 15px #8f8a86;
+    color: #e2d9d1;
+}
+
+.author-info h3 {
+    font-size: 3rem;
+}
+
+.author-info p {
+    font-size: 2rem;
+}
+
+.photo-author {
+    height: 45vh;
+    width: 28vw;
+    object-fit: cover;
+    object-position: top;
+    grid-area: 1 / 2 / 1 / 2;
+    border-radius: 80px;
+    box-shadow: 1px 1px 15px #8f8a86;
+}
+
+.sonny-angel {
+    grid-area: 1 / 2 / 1 / 2;
+    height: 25vh;
+    margin-bottom: 9vh;
+    align-self: end;
+    animation: sonnyJumping 1.5s 2s infinite;
+}
+
+.empty {
+    grid-area: 1 / 3 / 1 / 3;
+    height: 60vh;
+    background-color: #57493d;
+    margin: 2vh 0;
+    border-radius: 80px 0 0 80px;
+    box-shadow: 1px 1px 15px #8f8a86;
+}
+
+/* End second section */
+
+/* Third section */
+.third-section {
+    display: grid;
+    grid-template-rows: 2, auto;
+    margin: 7vh 0;
+}
+
+
+.third-forth-section {
+    display: grid;
+    grid-template-rows: 2, auto;
+}
+
+
+.third-section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0;
+    margin-top: 1vh;
+}
+
+.more-of-mtm {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 7vw;
+    padding: 3vh 3.5vw;
+    grid-template-rows: 1fr;
+    font-size: 1.8rem;
+    overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+    height: 1vh;
+    background-color: #d9ccc1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #57493d;
+}
+
+.more-of-mtm a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.more-of-mtm-one,
+.more-of-mtm-two,
+.more-of-mtm-three,
+.more-of-mtm-four,
+.more-of-mtm-five {
+    border: 2px solid #000000;
+    border-radius: 25px;
+    justify-self: center;
+    align-self: baseline;
+    padding: 1vh 0;
+    width: 20vw;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.6s;
+}
+
+.more-of-mtm-one {
+    background-image: url(../images/Screenshot\ 2023-10-03\ 155445.png);
+}
+
+.more-of-mtm-two {
+    background-image: url(../images/Screenshot\ 2023-10-03\ 155358.png);
+}
+
+.more-of-mtm-three {
+    background-image: url(../images/Screenshot\ 2023-10-03\ 155435.png);
+}
+
+.more-of-mtm-four {
+    background-image: url(../images/Screenshot\ 2023-10-03\ 155423.png);
+}
+
+.more-of-mtm-five {
+    background-image: url(../images/Screenshot\ 2023-10-03\ 155412.png);
+}
+
+.more-of-mtm-one:hover,
+.more-of-mtm-two:hover,
+.more-of-mtm-three:hover,
+.more-of-mtm-four:hover,
+.more-of-mtm-five:hover {
+    padding: 4vw 0;
+    font-size: 2.8rem;
+    text-shadow: 0 0 5px #81cbfc;
+}
+
+.forth-section {
+    display: grid;
+    grid-template-rows: 2, auto;
+    margin-top: 7vh;
+}
+
+.forth-section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+.more-of-others {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.8rem;
+}
+
+.more-of-others a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 7vh;
+}
+
+.more-of-others-one,
+.more-of-others-two,
+.more-of-others-three,
+.more-of-others-four {
+    border: 2px solid #000000;
+    border-radius: 25px;
+    justify-self: center;
+    align-self: baseline;
+    width: 18vw;
+    padding: 4vh 0;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.more-of-others-one,
+.more-of-others-three {
+    align-self: self-start;
+}
+
+.more-of-others-two,
+.more-of-others-four {
+    margin-top: 4vh;
+}
+
+.more-of-others-one {
+    background-image: url(../images/Screenshot\ 2023-10-04\ 170551.png);
+}
+
+.more-of-others-one:hover {
+    font-size: 1.4rem;
+    padding: 0;
+    padding-bottom: 26vh;
+    background-image: url(../images/Screenshot\ 2023-10-04\ 171029.png);
+}
+
+.more-of-others-two {
+    background-image: url(../images/Screenshot\ 2023-10-04\ 170559.png);
+}
+
+.more-of-others-two:hover {
+    font-size: 1.4rem;
+    padding: 0;
+    padding-bottom: 26vh;
+    background-image: url(../images/Screenshot\ 2023-10-04\ 184328.png);
+}
+
+.more-of-others-three {
+    background-image: url(../images/Screenshot\ 2023-10-04\ 170759.png);
+}
+
+.more-of-others-three:hover {
+    font-size: 1.4rem;
+    padding: 0;
+    padding-bottom: 26vh;
+    background-image: url(../images/Screenshot\ 2023-10-04\ 170949.png);
+}
+
+.more-of-others-four {
+    padding-top: 2vh;
+    background-image: url(../images/Screenshot\ 2023-10-04\ 170749.png);
+}
+
+.more-of-others-four:hover {
+    font-size: 1.4rem;
+    padding: 0;
+    padding-bottom: 26vh;
+    background-image: url(../images/Screenshot\ 2023-10-04\ 184248.png);
+}
+
+.contactButton {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #d9ccc1;
+    padding: 1.5vh 4vw;
+    margin: 5vh 0 10vh 0;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 3px #484848;
+    text-decoration: none;
+    color: #2c2b2a;
+    font-size: 2.4rem;
+}
+
+.contactButton:hover {
+    border-bottom: 1px solid #2c2b2a;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #484848;
+    transform: translateY(-3px);
+    color: #000000;
+}
+
+.contactButton:active {
+    color: #e2d9d1;
+    background-color: #57493d;
+}
+
+.fifth-section {
+    margin: 7vh 20vw;
+    animation: goUpAnimation 1s ease-out;
+}
+
+.join-in {
+    color: #382e25;
+    font-size: 3.2rem;
+}
+
+.fifth-section article {
+    background-color: #57453db9;
+    border-radius: 20px;
+    padding: 0 5vw;
+    color: #ffffff;
+    box-shadow: 3px 3px 8px #382e25;
+}
+
+.fifth-section article p {
+    padding: 3vh 0;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #d4d3d1;
+}
+
+.fifth-section article form {
+    display: grid;
+    grid-template-columns: 2, auto;
+    grid-template-rows: 2, auto;
+    gap: 3vw;
+    font-size: 1.2rem;
+}
+
+.about-poem {
+    grid-area: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.fifth-section article form label {
+    display: block;
+}
+
+.fifth-section article form input {
+    padding: 1vh 0;
+    width: 100%;
+}
+
+.fifth-section article form textarea {
+    width: 100%;
+}
+
+.fifth-section article form select {
+    padding: 1vh 0;
+    width: 100%;
+}
+
+.about-author {
+    grid-area: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth-section article form button {
+    grid-area: 2 / 2;
+    background-color: #d9ccc1;
+    justify-self: end;
+    align-self: center;
+    padding: 1vh 0;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 3px #484848;
+}
+
+.fifth-section article form button a {
+    color: #000000;
+    text-decoration: none;
+    padding: 1vh 3vw;
+}
+
+.fifth-section article form button:hover {
+    border-bottom: 1px solid #2c2b2a;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #484848;
+    transform: translateY(-3px);
+}
+
+.fifth-section article form button:active {
+    background-color: #57493d;
+}
+
+.fifth-section article form button a:active {
+    color: #e2d9d1;
+}
+
+.sixth-section {
+    animation: goUpAnimation 1s ease-out;
+    margin: 10vh 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.sixth-section h1 {
+    color: #e2d9d1;
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 2vh;
+    background-color: #57493d;
+    border-radius: 80px 80px 0 0;
+    width: 30vw;
+}
+
+.sixth-section h1 span {
+    font-size: 5rem;
+    font-style: italic;
+}
+
+.sixth-section img {
+    padding: 1.45vh;
+    border: 5px solid #57493d;
+    border-radius: 0 0 80px 80px;
+    width: 30vw;
+}
+
+footer {
+    background-image: url(../images/Eternity\ Pond\ by\ David\ Dessens.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: #e1e1e1;
+    margin: 5vh 0;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+footer a:active {
+    color: #e1e1e1;
+}
+
+@media (max-width: 480px) {
+    #center-container {
+        width: 480px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        height: 5vh;
+        border-radius: 0 0 20% 20%;
+        gap: 0;
+        padding-left: 6vh;
+    }
+
+    nav img {
+        width: 12vw;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+        border-bottom: 1px solid #2c2b2a;
+        border-radius: 0 0 20px 0;
+        box-shadow: 3px 3px 3px #484848;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .web-name {
+        font-size: 4rem;
+    }
+
+    .moto {
+        font-size: 5rem;
+    }
+
+    .first-section {
+        flex-direction: column;
+    }
+
+    .poem-itself {
+        height: fit-content;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .poem-itself p {
+        font-size: 1rem;
+    }
+
+    .images {
+        flex-direction: row;
+        width: 90vw;
+        justify-content: center;
+        margin: 3vh 0;
+    }
+
+    .images img {
+        width: 30vw;
+        height: 10vh;
+        border-left: none;
+        border-bottom: 2px solid #5a5959;
+    }
+
+    .top-photo {
+        border-radius: 30px 0 0 30px;
+    }
+
+    .bottom-photo {
+        border-radius: 0 30px 30px 0;
+    }
+
+    .poem-info {
+        justify-content: center;
+    }
+
+    .poem-info p,
+    .poem-info-score h3,
+    .poem-info-comment label {
+        font-size: 1.8rem;
+    }
+
+    .poem-info span,
+    .poem-info-score label {
+        font-size: 1.4rem;
+    }
+
+    .poem-info-comment textarea {
+        font-size: 1.2rem;
+    }
+
+
+
+    .second-section {
+        grid-template-columns: 60vw 40vw;
+        height: 40vh;
+        background-image: url(../imgaes-media//Screenshot\ 2023-10-02\ 135828-small.png);
+    }
+
+    .author-info {
+        height: 40vh;
+    }
+
+    .author-info h3 {
+        font-size: 2rem;
+    }
+
+    .author-info p {
+        font-size: 1.4rem;
+    }
+
+    .photo-author {
+        height: 40vh;
+        width: 38vw;
+    }
+
+    .sonny-angel {
+        height: 15vh;
+        margin-bottom: 1vh;
+        margin-left: -2vh;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    .third-section h2 {
+        font-size: 2rem;
+    }
+
+    .more-of-mtm {
+        gap: 3vw
+    }
+
+    .more-of-mtm a {
+        padding: 1vh 0;
+        width: 35vw;
+        font-size: 1.4rem;
+    }
+
+    .more-of-mtm-one:hover,
+    .more-of-mtm-two:hover,
+    .more-of-mtm-three:hover,
+    .more-of-mtm-four:hover,
+    .more-of-mtm-five:hover {
+        padding: 1vh 0;
+        font-size: 1.4rem;
+        text-shadow: 0 0 5px #81cbfc;
+    }
+
+    .forth-section h2 {
+        font-size: 2rem;
+    }
+
+    .more-of-others {
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        margin-bottom: 6vh;
+    }
+
+    .more-of-others a {
+        padding: 3vh 13vw;
+        margin-left: 1vw;
+        margin-bottom: -1vh;
+        font-size: 1.3rem;
+    }
+
+    .more-of-others-two {
+        margin-top: 0;
+    }
+
+    .more-of-others-four {
+        margin-bottom: 6vh;
+    }
+
+
+    .more-of-others-one:hover {
+        font-size: 1.4rem;
+        padding: 3vh 5vw;
+        width: 35vw;
+        background-image: url(../images/Screenshot\ 2023-10-04\ 170551.png);
+    }
+
+    .more-of-others-two:hover {
+        font-size: 1.4rem;
+        padding: 3vh 5vw;
+        width: 35vw;
+        background-image: url(../images/Screenshot\ 2023-10-04\ 170559.png);
+    }
+
+    .more-of-others-three:hover {
+        font-size: 1.4rem;
+        padding: 3vh 5vw;
+        width: 35vw;
+        background-image: url(../images/Screenshot\ 2023-10-04\ 170759.png);
+    }
+
+    .more-of-others-four:hover {
+        font-size: 1.4rem;
+        padding: 3vh 5vw;
+        width: 35vw;
+        background-image: url(../images/Screenshot\ 2023-10-04\ 170749.png);
+    }
+
+    .fifth-section p {
+        font-size: 2rem;
+    }
+
+    .fifth-section article form {
+        display: block;
+    }
+
+    .fifth-section article form button {
+        margin-top: 2vh;
+    }
+
+    .sixth-section {
+        margin: 10vh 0;
+    }
+
+    .sixth-section h1 {
+        width: 70.6vw;
+        padding-top: 7vh;
+        padding-bottom: 7vh;
+    }
+
+    .sixth-section img {
+        width: 75vw;
+        padding: 1vw;
+    }
+
+    footer a {
+        font-size: 1rem;
+    }
+}
+/* Eind hele body coden */
